@@ -36,7 +36,7 @@ This tool connects to a target device via SSH, executes predefined diagnostic co
 ### 1. Clone repo & install dependencies
 
 ```bash
-git clone https://github.com/yourname/NetworkAutomationLab.git
+git clone https://github.com/Dreadwolf26/NetworkAutomationLab.git
 cd NetworkAutomationLab
 pip install -r requirements.txt
 ```
