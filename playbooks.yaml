@@ -1,0 +1,18 @@
+playbooks:
+  - id: pi_status
+    name: "Raspberry Pi Status"
+    commands:
+      - cmd: "hostname -I"
+        description: "Show IP address"
+      - cmd: "uname -a"
+        description: "Kernel & system info"
+      - cmd: "uptime"
+        description: "System uptime & load"
+      - cmd: "df -h"
+        description: "Disk usage"
+      - cmd: "ping google.com -c 4"
+        description: "Ping test to Google"
+      - cmd: "netstat -a"
+        description: "Network connections"
+    store_output: "pi_status.log"
+    safe: true

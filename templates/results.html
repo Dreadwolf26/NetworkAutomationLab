@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ playbook_id }} results</title>
+    <style>
+        body { font-family: monospace; background: #111; color: #eee; }
+        h2 { color: #6cf; }
+        h3 { margin-top: 1em; color: #fc6; }
+        pre {
+            background: #222;
+            border: 1px solid #444;
+            padding: 0.5em;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Playbook Results: {{ playbook_id }}</h2>
+    {% for result in results %}
+        <h3>$ {{ result.cmd }}</h3>
+        <p><em>{{ result.desc }}</em></p>
+        <pre>{{ result.output }}</pre>
+    {% endfor %}
+</body>
+</html>
