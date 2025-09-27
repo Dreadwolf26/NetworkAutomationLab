@@ -5,7 +5,7 @@ This tool connects to a target device via SSH, executes predefined diagnostic co
 
 ---
 
-##Features
+## Features
 
 * **FastAPI backend** – REST routes for triggering playbooks.
 * **Jinja2 templates** – clean HTML rendering of command output.
@@ -32,6 +32,8 @@ This tool connects to a target device via SSH, executes predefined diagnostic co
 ---
 
 ## Usage
+
+This project is aimed at using a Raspberry PI on your local network and running commands against it. This is where the naming conventions came from. 
 
 ### 1. Clone repo & install dependencies
 
